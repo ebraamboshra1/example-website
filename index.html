@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Button Click Message</title><style>
+  button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+</style></head><body><button id="messageButton">Click Me!</button><p id="displayMessage" style="display:none;">Hello, welcome to our webpage!</p><script>
+  document.getElementById("messageButton").addEventListener("click", function() {
+      var messageParagraph = document.getElementById("displayMessage");
+      var token = getMyToken();
+      alert(token);
+  });
+</script></body></html>
