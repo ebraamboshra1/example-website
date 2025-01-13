@@ -11,7 +11,7 @@
   <script>
     // Token to be displayed in the alert 
     document.getElementById('alertButton').addEventListener('click', function() {
-      var token = getMyToken();
+      var token = getMyToken()||'';
       alert('Token: ' + token);
     });
 </script>
